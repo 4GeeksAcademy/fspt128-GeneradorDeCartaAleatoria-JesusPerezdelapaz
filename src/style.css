@@ -1,5 +1,42 @@
-@import "bootstrap/dist/css/bootstrap.min.css";
+body {
+    background-repeat: no-repeat;
+}
 
-body{
-    background: white;
+.card {
+    height: 600px;
+    background-color: white;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.651);
+}
+
+.valor {
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 500px;
+}
+
+.valor h1 {
+    font-size: 200px;
+}
+
+.topIcon {
+    margin-top: -20px;
+    font-size: 100px
+}
+
+.botIcon {
+    font-size: 100px;
+}
+
+.btn {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.651);
+}
+
+.rojo {
+    color: rgb(204, 0, 0)
+}
+
+.black {
+    color: black
 }
