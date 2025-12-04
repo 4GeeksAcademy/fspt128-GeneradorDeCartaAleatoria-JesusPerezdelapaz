@@ -2,10 +2,10 @@ const valores = ['A', '2', '3', '4', '5', '6', '7', '8', '9', 'J', 'Q', 'K']
 const iconos = ['♠', '♣', '♦', '♥']
 //------------------------------------- ACÁ DECLARO LA FUNCION QUE GENERA UNA CARTA -----------------------------------
 const generador = () => {
-
-  const elementoRandom = (arr) => {
-    let random = Math.floor(Math.random() * arr.length)
-    return arr[random];
+//------------------------------------FUNCIÓN PARA OBTENER ALEATORIAMENTE UN VALOR Y UN ICONO---------------------
+  const elementoRandom = (arreglo) => {
+    const random = Math.floor(Math.random() * arreglo.length)
+    return arreglo[random];
   };
 
   const valorRandom = elementoRandom(valores);
@@ -13,10 +13,10 @@ const generador = () => {
 
 //----------------------------ACÁ OBTENGO LOS ELEMENTOS DEL HTML-----------------------------
 
-  let valor = document.getElementById('valor');
-  let topIcon = document.getElementById('topIcon');
-  let botIcon = document.getElementById('botIcon');
-  let carta = document.getElementById('carta');
+  const valor = document.getElementById('valor');
+  const topIcon = document.getElementById('topIcon');
+  const botIcon = document.getElementById('botIcon');
+  const carta = document.getElementById('carta');
 
 //---------------------------------IF PARA EL COLOR DE LA CARTA--------------------------
 
